@@ -27,3 +27,24 @@ article.archive-article-format { box-shadow: none; padding: 0; }
 
 // Add a little horizontal space in dt elements
 .dl-horizontal dt { width: 135px; }
+
+#hero-inner {
+  font-family: 'PT Sans Caption', 'Cantarell', sans-serif;
+  h1 {
+    color: #25507f;
+    font-size: 108px;
+  }
+  h2 { font-size: 36px; }
+}
+@media (max-width: 768px) {
+  #hero-inner {
+    h1 { font-size: 90px; }
+    h2 { 
+      font-size: 30px;
+      width: 450px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  #hero-inner h2 { width: 250px; }
+}
