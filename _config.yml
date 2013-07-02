@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://zipify.net
+url: http://www.zipify.net
 title: Zipify
 subtitle: <em>Technology Consulting for Online Businesses</em>
 author: Low Chin Chau
@@ -94,7 +94,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: "UA-41977476-1"
 
 # Facebook Like
 facebook_like: false

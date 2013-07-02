@@ -13,7 +13,7 @@ rsync_args     = ""  # Any extra arguments to pass to rsync
 
 ## -- S3 Deploy config -- ##
 #
-s3_bucket      = "zipify.net"
+s3_bucket      = "www.zipify.net"
 deploy_default = "s3"
 
 # This will be configured for you when you run config_deploy
@@ -399,5 +399,6 @@ end
 desc "Deploy website via s3cmd with CloudFront cache invalidation"
 task :s3 do
   puts "## Deploying website via s3cmd"
-  ok_failed system("s3cmd sync --acl-public --reduced-redundancy --cf-invalidate public/ s3://#{s3_bucket}/ --verbose")
+  # ok_failed system("s3cmd sync --acl-public --reduced-redundancy --cf-invalidate public/ s3://#{s3_bucket}/ --verbose")
+  ok_failed system("s3cmd sync --acl-public --reduced-redundancy public/ s3://#{s3_bucket}/ --verbose")
 end

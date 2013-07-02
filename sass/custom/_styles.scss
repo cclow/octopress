@@ -33,11 +33,13 @@ article.archive-article-format { box-shadow: none; padding: 0; }
   h1 {
     color: #25507f;
     font-size: 108px;
+    img { margin: 0px; }
   }
   h2 { font-size: 36px; }
 }
 @media (max-width: 768px) {
   #hero-inner {
+    margin-top: 0px;
     h1 { font-size: 90px; }
     h2 { 
       font-size: 30px;
